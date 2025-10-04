@@ -174,3 +174,73 @@ footer {
   text-align: center;
   background: #f4f4f4;
 }
+/* ===== MOBILE RESPONSIVE ===== */
+
+/* Tablets and smaller screens */
+@media (max-width: 768px) {
+  #hero h1.street,
+  #hero h1.stroke {
+    font-size: 3rem; /* shrink titles */
+    text-align: center;
+  }
+
+  #hero h2.slogan {
+    font-size: 1.5rem;
+  }
+
+  #hero button {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+
+  #hero .whatsapp-link a {
+    font-size: 0.9rem;
+  }
+
+  #info, #announcements, #TypesofShirts, #products {
+    padding: 20px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+
+  .product-card img {
+    height: 200px; /* adjust image size */
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  #hero h1.street,
+  #hero h1.stroke {
+    font-size: 2.5rem;
+  }
+
+  #hero h2.slogan {
+    font-size: 1.2rem;
+  }
+
+  #hero button {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr; /* stack products vertically */
+    gap: 10px;
+  }
+
+  .product-card img {
+    height: 180px; /* smaller images for mobile */
+  }
+
+  #TypesofShirts {
+    padding: 30px 15px;
+  }
+
+  #info {
+    font-size: 1rem;
+  }
+}
